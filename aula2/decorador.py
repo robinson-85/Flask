@@ -13,23 +13,23 @@ print ("Copyright - 2020")
 
 # Utilizando o decorator
 
-def header (f):
-    def decorator (*args, **kwargs):
-        print ("###Bem vindo ao meu site###")
-        print ("")
-        return function (*args, **kwargs)
-        return decorator
+def header(f):
+    def decorator(*args, **kwargs):
+        print("###Bem vindo ao meu site###")
+        print("")
+        return f(*args, **kwargs)
+    return decorator
 
-def footer (f):
-    def decorator (*args, **kwargs):
+def footer(f):
+    def decorator(*args, **kwargs):
         print("### Copyright - 2020 ###\n")
-        return function (*args, **kwargs)
-        return decorator
+        return f(*args, **kwargs)
+    return decorator
 
 @footer
 @header
-def produto (*args, **kwargs):
-    print (f"Produto: {nome} - R$ 2K")
+def produto(nome, *kwargs):
+    print(f"Produto: {nome} - R$ 2K")
 
 @footer
 @header
