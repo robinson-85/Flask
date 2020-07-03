@@ -9,7 +9,24 @@ class Animal:
     def comer(self):
         print("Estou comendo...crunch crunch")
 
-https://www.twitch.tv/videos/645042904?collection=gRe7fj7iGBZJMQ
+class Mamifero(Animal):
+
+    def comer(self):
+        print("Estou tomando leite...")
+
+class Oviparos(Animal):
+
+    def nascer(self):
+        print(f"Acabei de quebrar o ovo no planeta {self.planeta}")
+
+class Especial(Mamifero, Oviparos):
+
+    def nadar(self):
+        print("Tchibummmmmm")
+
+# a class acima e chamada de heranca dupla, mas, nao e um bom uso.
+
+
 
 
 
