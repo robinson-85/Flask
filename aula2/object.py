@@ -1,9 +1,14 @@
 class Animal:
     # atributos de classe
     planeta = "Terra"
+    animal_nasceu = False
+
+    def nasceu(self):
+        return self.animal_nasceu
 
     # metodo
     def nascer(self):
+        self.nasceu = True
         print(f"Oi, eu nasci na {self.planeta}")
 
     def comer(self):
