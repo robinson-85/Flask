@@ -8,7 +8,7 @@ class Animal:
 
     # metodo
     def nascer(self):
-        self.nasceu = True
+        self.animal_nasceu = True
         print(f"Oi, eu nasci na {self.planeta}")
 
     def comer(self):
@@ -29,7 +29,7 @@ class Especial(Mamifero, Oviparos):
     def nadar(self):
         print("Tchibummmmmm")
 
-# a class acima e chamada de heranca dupla, mas, nao e um bom uso.
+# a class acima é chamada de heranca dupla, mas, nao é um bom uso.
 
 
 
