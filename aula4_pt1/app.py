@@ -2,7 +2,6 @@ from flask import Flask
 
 import views
 
-
 def create_app():
     """Factory principal"""
 

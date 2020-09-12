@@ -49,6 +49,7 @@ views.init_app(app)
 from flask import current_app, g
 
 ## 3 Request Context
+
 ### usar globais do flask
 from flask import request, session, g
 

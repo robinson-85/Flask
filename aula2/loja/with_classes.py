@@ -24,8 +24,8 @@ class Person:
         print(f"I'm just running eating")
 
 if __name__ == '__main__':
-    robinson = Person("Robinson", 35, "Gaucho")
-    rafael = Person("Rafael", 31, "Macho alfa!")
+    robinson = Person("Robinson", 35, "Masculino")
+    rafael = Person("Rafael", 31, "Masculino")
 
 
     lista_de_pessoas = [robinson, rafael]
