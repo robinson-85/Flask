@@ -1,39 +1,66 @@
-#Listas
-#...........0.........1........2....
-cores = ["vermelho","verde", "azul"]
-numeros = [1,2,3]
-mistura = [1, "robinson", 4.5, True, cores, numeros, [1,2,3]]
-cores.append ("Amarelo")
-cores.insert(1, "branco")
-cores.remove ("azul") 
+# Listas:
+# indices     0         1       2
+cores = ["vermelho", "verde", "azul"]
 
+numeros = [1, 2, 3]
+mistura = [1, "bruno", 4.5, True, cores, numeros, [1, 2, 3]]
+
+cores.append("amArelo")
+cores.insert(1, "branco")
+cores.remove("azul")
 print(cores)
 
+# Tuplas
+#                0           1        2
+identidade = ("Bruno", "456789456-9", 15)
 
-#Tuplas
-#................0...........1...........2
-identidade = ("Robinson", "398457555-2", 35)
+print(f"Nome é {identidade[0]}")
+print(f"CPF é {identidade[1]}")
+print(f"Idade é {identidade[2]}")
 
-print(f"nome é {identidade[0]}")
-print(f"cpf é {identidade[1]}")
-print(f"idade é {identidade[2]}")
-
-#desempacotamento
+# desempacotamento
 nome, cpf, idade = identidade
 print(nome, cpf, idade)
 
-#dicionario(Array associativo, Hashmap, Object)
-pessoa = {"nome": "Robinson", "cpf": "398457555-2", "idade": 35}
+# Dicionario  (Array Associativo, HashMap, Object)
 
-#para facilitar a leitura é mais fácil fazer assim:
 pessoa = {
     "nome": "Karla",
-    "cpf": "398457555-2", 
-    "idade": 18
+    "cpf": "698126741-8",
+    "idade": 18,
+    "cores_preferidas": cores,
+    "numeros_preferidos": numeros
 }
-#se eu quiser mudar o dicionário posso fazer assim:
 
-pessoa ["idade"] = 19
-pessoa ["Canal"] = "@KarlaMag"
+pessoa["idade"] = 19
+pessoa["canal"] = "@KarlaMag"
 
-print(f"Olá, a {pessoa['nome']} tem {pessoa['idade']} anos")
+print(f"Olá, a {pessoa['nome']} tem {pessoa['idade']} anos.")
+
+
+# Iteração (pegar um elemento de cada vez)
+
+for cor in cores:
+    print(cor.upper())
+
+print("Gabriel"[0])
+print("Gabriel"[-1])
+
+for letra in "Gabriel":
+    if letra == "i":
+        continue
+    print(letra)
+
+# List Comprehension
+print([letra for letra in "Gabriel"])
+
+# list comprehension filtrada
+print([letra for letra in "Gabriel" if letra != "i"])
+
+
+for chave in pessoa:
+    print(chave, ":",  pessoa[chave])
+
+
+for chave, valor in pessoa.items():
+    print(chave, ":", valor)
