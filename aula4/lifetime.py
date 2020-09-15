@@ -18,7 +18,7 @@ def funcao():
 
 app.add_url_rule("/path", callable)
 
-### Inicializar extensões
+### Iniciar extensões
 
 from flask admin import Admin
 Admin.init_app(app)

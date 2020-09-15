@@ -1,4 +1,5 @@
 """Extensão Flask"""
+
 from flask import Flask, request
 
 
